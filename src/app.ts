@@ -10,15 +10,19 @@ app.use(express.urlencoded({ extended: true }))
 
 // application route
 console.log(app.get('env'))
-app.use('/api/v1/users/', UserRouters)
+app.use('/api/v1/', UserRouters)
 
 //testing
-// app.get('/', (req: Request, res: Response) => {
-//   // next('Ore baba error hoiche ki korbo')
-//   // res.send('Hello World!')
-//   // Promise.reject(new Error('Unhandled promise rejection'))
-//   // console.log(x)
+// app.get('/', (req: Request, res: Response):void => {
+// //   next('Ore baba error hoiche ki korbo')
+//   res.send('Hello World!')
+// //   Promise.reject(new Error('Unhandled promise rejection'))
+// //   console.log(x)
 // })
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
 // global error handler
 app.use(globalErrorHandler)

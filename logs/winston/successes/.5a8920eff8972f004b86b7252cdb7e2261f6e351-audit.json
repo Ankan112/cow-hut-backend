@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\successes\\.5a8920eff8972f004b86b7252cdb7e2261f6e351-audit.json",
+    "files": [
+        {
+            "date": 1687103679786,
+            "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\successes\\cow-2023-18-06-21-success.log",
+            "hash": "22689a3411524f13818b642cf82a51b231bfce763d63fce2892d9de6a1cfcad8"
+        },
+        {
+            "date": 1687104818280,
+            "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\successes\\cow-2023-18-06-22-success.log",
+            "hash": "491558216fd7ea6788a88db1c7f6f83d8c0c822318670c87ada8468d894b851a"
+        },
+        {
+            "date": 1687108197503,
+            "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\successes\\cow-2023-18-06-23-success.log",
+            "hash": "d5f40b176da2c0137854f22095ffd14d0b2ef5c5c6f8ce57533138d8d3fa19b7"
+        },
+        {
+            "date": 1687152638079,
+            "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\successes\\cow-2023-19-06-11-success.log",
+            "hash": "3f5009753be7de82710ee220c55a66c30c5a64a4d5ec8969f90c009ca8f6bd38"
+        }
+    ],
+    "hashType": "sha256"
+}
