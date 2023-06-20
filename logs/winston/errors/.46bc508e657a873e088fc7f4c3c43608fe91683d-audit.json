@@ -24,6 +24,16 @@
             "date": 1687152638156,
             "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\errors\\cow-2023-19-06-11-error.log",
             "hash": "b01e7d7c271743bb90d4fafae72d65a77bd20010dda134946af9be7cd8a40e6e"
+        },
+        {
+            "date": 1687154492145,
+            "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\errors\\cow-2023-19-06-12-error.log",
+            "hash": "0f1c20c9619301541e87f131e61d4e98b48cdc895654aad9562d1c4cd5d4a622"
+        },
+        {
+            "date": 1687238569216,
+            "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\errors\\cow-2023-20-06-11-error.log",
+            "hash": "b408b4fc8dbd29575584dfc16ca35dac7c164abc597d4806ccc79d381aaceaa2"
         }
     ],
     "hashType": "sha256"
