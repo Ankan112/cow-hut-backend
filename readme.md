@@ -25,3 +25,8 @@
 - api/v1/cows?minPrice=120000&maxPrice=300000
 - api/v1/cows?location=Dhaka
 - api/v1/cows?searchTerm=gir
+
+### Orders
+
+- api/v1/orders (POST)
+- api/v1/orders (GET)
