@@ -19,7 +19,7 @@ const createCow: RequestHandler = async (req, res, next) => {
 }
 
 const getAllCow: RequestHandler = async (req, res, next) => {
-  const filters = pick(req.query, ['searchTerm', 'price', 'location'])
+  const filters = pick(req.query, ['searchTerm', 'location'])
   const paginationOptions = pick(req.query, paginationFields)
   // console.log(paginationOptions)
 

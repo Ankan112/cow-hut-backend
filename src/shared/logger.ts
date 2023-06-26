@@ -58,7 +58,3 @@ const errorLogger = createLogger({
   ],
 })
 export { logger, errorLogger }
-
-// logs/winston
-// successes/success.log
-// errors/error.log

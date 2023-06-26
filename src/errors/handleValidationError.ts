@@ -20,14 +20,3 @@ const handleValidationError = (
 }
 
 export default handleValidationError
-
-// const handleValidationError = (err: mongoose.Error.ValidationError): IGenericErrorMessage[] => {
-//     const errors: IGenericErrorMessage[] = Object.values(err.errors).map((el: mongoose.Error.ValidationError) => {
-//         return {
-//             path: el?.path,
-//             message: el?.message
-//         };
-//     });
-
-//     return errors;
-// };

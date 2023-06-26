@@ -1,0 +1,13 @@
+{
+  connectionGeneration: 0,
+  level: 'error',
+  message: 'Filed to connect database connection 1 to 35.170.190.228:27017 timed out',
+  stack: 'MongoNetworkTimeoutError: connection 1 to 35.170.190.228:27017 timed out\n' +
+    '    at Timeout._onTimeout (D:\\Next-Level\\Assignment-3\\assignment-3\\node_modules\\mongodb\\src\\cmap\\connection.ts:327:26)\n' +
+    '    at listOnTimeout (node:internal/timers:564:17)\n' +
+    '    at processTimers (node:internal/timers:507:7)',
+  label: 'ph',
+  timestamp: '2023-06-26T15:47:12.556Z',
+  [Symbol(errorLabels)]: Set(1) { 'ResetPool' },
+  [Symbol(beforeHandshake)]: true
+}

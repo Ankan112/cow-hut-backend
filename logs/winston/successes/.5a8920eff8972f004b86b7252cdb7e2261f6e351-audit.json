@@ -99,6 +99,21 @@
             "date": 1687788075421,
             "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\successes\\cow-2023-26-06-20-success.log",
             "hash": "1413060df93975426c813cedb97dd5ea005733b4b5dd451b5e09b2c4187514c6"
+        },
+        {
+            "date": 1687792430765,
+            "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\successes\\cow-2023-26-06-21-success.log",
+            "hash": "dd4ad17862269d6b5149aa9e09bcf2278d90ef9294eff6ab4815647e7037f439"
+        },
+        {
+            "date": 1687796693369,
+            "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\successes\\cow-2023-26-06-22-success.log",
+            "hash": "6116d5aa4dfbc9729d3b8b74459de4423f1d910fc685af082bb63b9d7b191376"
+        },
+        {
+            "date": 1687801021293,
+            "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\successes\\cow-2023-26-06-23-success.log",
+            "hash": "e4f7df3af232fc85a26e33bbce96c0ed9a50e9f3eae2f4a3d7dbcbd96e2deed9"
         }
     ],
     "hashType": "sha256"

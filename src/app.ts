@@ -3,6 +3,7 @@ import cors from 'cors'
 import globalErrorHandler from './app/modules/users/middlewares/globalErrorHandler'
 import { UserRouters } from './app/modules/users/user.route'
 import { CowRouters } from './app/modules/cows/cow.route'
+import { OrderRouters } from './app/modules/orders/order.route'
 const app: Application = express()
 
 app.use(cors())
@@ -13,14 +14,7 @@ app.use(express.urlencoded({ extended: true }))
 console.log(app.get('env'))
 app.use('/api/v1/', UserRouters)
 app.use('/api/v1', CowRouters)
-
-//testing
-// app.get('/', (req: Request, res: Response):void => {
-// //   next('Ore baba error hoiche ki korbo')
-//   res.send('Hello World!')
-// //   Promise.reject(new Error('Unhandled promise rejection'))
-// //   console.log(x)
-// })
+app.use('/api/v1/', OrderRouters)
 
 app.get('/', (req, res) => {
   res.send('Hello World!')

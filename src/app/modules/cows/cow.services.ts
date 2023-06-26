@@ -35,30 +35,6 @@ const getAllCow = async (
 ): Promise<IGenericResponseForCow<ICow[]>> => {
   const { searchTerm, ...filtersData } = filters
 
-  // const andConditions = [
-  //   {
-  //     $or: [
-  //       {
-  //         location: {
-  //           $regex: 'searchTerm',
-  //           $options: 'i',
-  //         },
-  //       },
-  //       {
-  //         breed: {
-  //           $regex: 'searchTerm',
-  //           $options: 'i',
-  //         },
-  //       },
-  //       {
-  //         category: {
-  //           $regex: 'searchTerm',
-  //           $options: 'i',
-  //         },
-  //       },
-  //     ],
-  //   },
-  // ]
   const andConditions = []
   const searchableFields = ['location', 'breed', 'category']
   if (searchTerm) {
@@ -80,16 +56,17 @@ const getAllCow = async (
     })
   }
 
-  const whereCondition = andConditions.length > 0 ? { $and: andConditions } : {}
-
-  const { page, limit, skip, sortBy, sortOrder } =
+  const { page, limit, skip, sortBy, sortOrder, minPrice, maxPrice } =
     paginationHelpers.calculatePagination(paginationOptions)
-
+  const whereCondition = andConditions.length > 0 ? { $and: andConditions } : {}
+  const finalCondition =
+    minPrice > 0 || maxPrice > 0
+      ? { price: { $gte: minPrice, $lte: maxPrice } }
+      : whereCondition
   const sortConditions: { [key: string]: SortOrder } = {}
   if (sortBy && sortOrder) {
     sortConditions[sortBy] = sortOrder
   }
-
   const result = await Cow.find(whereCondition)
     .sort(sortConditions)
     .skip(skip)
