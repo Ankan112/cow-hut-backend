@@ -5,8 +5,3 @@ export type IGenericErrorResponse = {
   message: string
   errorMessages: IGenericErrorMessage[]
 }
-
-export enum UserRole {
-  SELLER = 'seller',
-  BUYER = 'buyer',
-}

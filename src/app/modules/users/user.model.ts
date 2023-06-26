@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose'
 import { IUser, UserModel } from './user.interface'
-import { UserRole } from '../../../interfaces/common'
+import { UserRole } from '../../../enums/commonEnums'
 
 const userSchema = new Schema<IUser>(
   {

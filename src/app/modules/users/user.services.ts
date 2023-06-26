@@ -1,16 +1,9 @@
 import { User } from './user.model'
 import { IUser } from './user.interface'
-// import config from '../../../config/index'
-// import { generatedUserId } from './user.utiles'
 import ApiError from '../../../errors/ApiError'
 
 // Create a new user service function
 const createUser = async (user: IUser): Promise<IUser> => {
-  // auto generated incremental id
-  // const id = await generatedUserId()
-  // user.id = id
-  // default password
-
   if (!user.income) {
     user.income = 0
   }
