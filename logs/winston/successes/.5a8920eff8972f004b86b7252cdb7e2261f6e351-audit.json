@@ -114,6 +114,11 @@
             "date": 1687801021293,
             "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\successes\\cow-2023-26-06-23-success.log",
             "hash": "e4f7df3af232fc85a26e33bbce96c0ed9a50e9f3eae2f4a3d7dbcbd96e2deed9"
+        },
+        {
+            "date": 1687805193556,
+            "name": "D:\\Next-Level\\Assignment-3\\assignment-3\\logs\\winston\\successes\\cow-2023-27-06-00-success.log",
+            "hash": "8dfcf54e73087a3ed5e4b557b4ad7e6a8bcd435fbf50b67dd03b074c3d606a5e"
         }
     ],
     "hashType": "sha256"
