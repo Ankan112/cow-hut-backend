@@ -2,6 +2,6 @@
 
 ## Application Routes:
 
-# User
+### User
 
 - api/v1/auth/signup (POST)
