@@ -82,3 +82,15 @@
   label: 'Author',
   timestamp: '2023-06-26T17:44:57.943Z'
 }
+{
+  message: 'Database is connected successfully',
+  level: 'info',
+  label: 'Author',
+  timestamp: '2023-06-26T17:46:36.561Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'Author',
+  timestamp: '2023-06-26T17:46:36.595Z'
+}
