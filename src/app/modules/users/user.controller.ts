@@ -5,7 +5,7 @@ import { UserService } from './user.services'
 const createUser: RequestHandler = async (req, res, next) => {
   try {
     const { user } = req.body
-    console.log(req.cookies, 'cookie')
+    // console.log(req.cookies, 'cookie')
     const result = await UserService.createUser(user)
     res.status(200).json({
       success: true,

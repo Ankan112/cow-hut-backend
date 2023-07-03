@@ -19,9 +19,9 @@ const createCow: RequestHandler = async (req, res, next) => {
 }
 
 const getAllCow: RequestHandler = async (req, res, next) => {
+  console.log(req.user)
   const filters = pick(req.query, ['searchTerm', 'location'])
   const paginationOptions = pick(req.query, paginationFields)
-  // console.log(paginationOptions)
 
   try {
     const result = await CowService.getAllCow(filters, paginationOptions)
