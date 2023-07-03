@@ -1,23 +1,18 @@
 import { Schema, model } from 'mongoose'
-import { IUser, UserModel } from './user.interface'
 import { UserRole } from '../../../enums/commonEnums'
+import { AdminModel, IAdmin } from './admin.interface'
 
-const userSchema = new Schema<IUser>(
+const adminSchema = new Schema<IAdmin>(
   {
-    phoneNumber: {
-      type: Number,
-      required: true,
-      unique: true,
-    },
-    role: {
-      type: String,
-      enum: [UserRole.SELLER, UserRole.BUYER],
-      required: true,
-    },
     password: {
       type: String,
       required: true,
       select: 0,
+    },
+    role: {
+      type: String,
+      enum: [UserRole.ADMIN],
+      required: true,
     },
     name: {
       firstName: {
@@ -29,16 +24,13 @@ const userSchema = new Schema<IUser>(
         required: true,
       },
     },
+    phoneNumber: {
+      type: Number,
+      required: true,
+      unique: true,
+    },
     address: {
       type: String,
-      required: true,
-    },
-    budget: {
-      type: Number,
-      required: true,
-    },
-    income: {
-      type: Number,
       required: true,
     },
   },
@@ -46,5 +38,4 @@ const userSchema = new Schema<IUser>(
     timestamps: true,
   }
 )
-
-export const User = model<IUser, UserModel>('User', userSchema)
+export const Admin = model<IAdmin, AdminModel>('Admin', adminSchema)

@@ -5,7 +5,7 @@ import { UserService } from './user.services'
 const createUser: RequestHandler = async (req, res, next) => {
   try {
     const { user } = req.body
-    console.log(user)
+    console.log(req.cookies, 'cookie')
     const result = await UserService.createUser(user)
     res.status(200).json({
       success: true,
@@ -14,11 +14,6 @@ const createUser: RequestHandler = async (req, res, next) => {
       data: result,
     })
   } catch (err) {
-    // res.status(400).json({
-    //   error: err,
-    //   // success: false,
-    //   // message: 'Failed to created user!!!',
-    // })
     next(err)
   }
 }

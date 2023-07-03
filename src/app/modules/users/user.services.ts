@@ -1,12 +1,20 @@
 import { User } from './user.model'
 import { IUser } from './user.interface'
 import ApiError from '../../../errors/ApiError'
+import config from '../../../config'
+import bcrypt from 'bcrypt'
 
 // Create a new user service function
 const createUser = async (user: IUser): Promise<IUser> => {
   if (!user.income) {
     user.income = 0
   }
+  // hash password
+  user.password = await bcrypt.hash(
+    user.password,
+    Number(config.bcrypt_salt_rounds)
+  )
+
   const createdUser = await User.create(user)
   if (!createdUser) {
     throw new ApiError(400, 'Failed to create user!')
