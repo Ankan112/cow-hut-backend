@@ -18,7 +18,7 @@ const loginUser: RequestHandler = async (req, res, next) => {
     res.status(200).json({
       success: true,
       statusCode: 200,
-      message: 'User login successfully',
+      message: 'User logged in successfully',
       data: others,
     })
   } catch (err) {
@@ -40,7 +40,7 @@ const refreshToken: RequestHandler = async (req, res, next) => {
     res.status(200).json({
       success: true,
       statusCode: 200,
-      message: 'User logged in successfully',
+      message: 'New access token generated successfully !',
       data: result,
     })
   } catch (err) {

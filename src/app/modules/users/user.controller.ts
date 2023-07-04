@@ -36,6 +36,7 @@ const getSingleUser: RequestHandler = async (req, res, next) => {
 // Get all users
 const getAllUsers: RequestHandler = async (req, res, next) => {
   try {
+    console.log(req.user)
     const result = await UserService.getAllUsers()
     res.status(200).json({
       success: true,

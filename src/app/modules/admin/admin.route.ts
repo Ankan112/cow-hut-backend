@@ -3,6 +3,7 @@ import { AdminController } from './admin..controller'
 const router = express.Router()
 
 router.post('/create-admin', AdminController.createAdmin)
-// router.get('/users', UserController.getAllUsers)
+router.post('/login', AdminController.loginAdmin)
+router.post('/refresh-token', AdminController.refreshToken)
 
 export const AdminRouters = router

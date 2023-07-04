@@ -2,7 +2,7 @@ import { Model } from 'mongoose'
 
 export type IAdmin = {
   password: string
-  role: 'admin'
+  role: string
   name: {
     firstName: string
     lastName: string
